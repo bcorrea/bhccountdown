@@ -1,0 +1,101 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="bhctecnologia.bhccountdown.MainActivity$PlaceholderFragment" >
+
+    <LinearLayout
+        android:id="@+id/layout1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:gravity="center_horizontal|top" >
+
+        <NumberPicker
+            android:id="@+id/numberHour"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+                <NumberPicker
+                    android:id="@+id/numberMinute"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <NumberPicker
+                    android:id="@+id/numberSecond"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+               <LinearLayout
+                   android:id="@+id/layout2"
+                   android:layout_centerHorizontal="true"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_below="@id/layout1"
+                   android:gravity="center_horizontal" >
+
+                    <TextView
+                        android:id="@+id/lblTime"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/Time"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:textSize="@dimen/abc_action_bar_default_height" />
+
+               </LinearLayout> 
+       
+<LinearLayout
+    android:id="@+id/layout3"
+    android:layout_width="wrap_content"
+    android:layout_centerHorizontal="true"
+    android:layout_height="wrap_content"
+    android:layout_below="@id/layout2"
+    android:gravity="center_horizontal" >
+
+                    <Button
+                        android:id="@+id/btnSet"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:onClick="btnSet_Click"
+                        android:text="@string/Set" />
+
+</LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="40dp"
+        android:gravity="bottom|end" >
+
+        <Button
+            android:id="@+id/btnStart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="btnStart_Click"
+            android:text="@string/Start" />
+
+        <Button
+            android:id="@+id/btnStop"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="btnStop_Click"
+            android:text="@string/Stop" />
+
+        <Button
+            android:id="@+id/btnReset"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="btnReset_Click"
+            android:text="@string/Reset" />
+    </LinearLayout>
+
+</RelativeLayout>
